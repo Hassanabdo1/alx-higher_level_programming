@@ -1,1 +1,0 @@
-everythink about py
