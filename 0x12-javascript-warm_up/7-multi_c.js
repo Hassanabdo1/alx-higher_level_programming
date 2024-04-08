@@ -1,11 +1,12 @@
 #!/usr/bin/node
-// Prints a specified string only if the first argument can be converted to an integer
+//  script that prints x times “C is fun”
 
-const args = process.argv;
-const number = parseInt(args[2], 10);
-if (isNaN(number)) {
-	  console.log('Not a number');
+const lang = 'C is fun';
+
+if (isNaN(process.argv[2])) {
+	  console.log('Missing number of occurrences');
 } else {
-	  console.log(`My number: ${number}`);
+  for (let i = 0; i < parseInt(process.argv[2]); i++) {
+	console.log(lang);
+ }
 }
-
