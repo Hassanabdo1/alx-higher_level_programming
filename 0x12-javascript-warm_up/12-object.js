@@ -1,6 +1,8 @@
 #!/usr/bin/node
-//  returns the addition of 2 integers.
-
-exports.add = function (a, b) {
-  return a + b;
+let myObject = {
+  type: 'object',
+  value: 12
 };
+console.log(myObject);
+myObject.value = 89;
+console.log(myObject);
